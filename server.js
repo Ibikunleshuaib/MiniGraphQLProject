@@ -27,25 +27,6 @@ const books = [
     { id: 8, name: 'Beyond the Shadows', authorId: 3 },
 ]
 
-//We need not supply the id property here since we have an 
-//object that contains id in it ie (books)
-
-// const BookType = new GraphQLObjectType({
-//     name: 'Book',
-//     description: 'This represents a book written by an author',
-//     fields: () => ({
-//         id: { type: GraphQLNonNull(GraphQLInt) },
-//         name: {type: GraphQLNonNull(GraphQLString)},
-//         authorId: { type: GraphQLNonNull(GraphQLInt) },
-//         author: { 
-//             type: AuthorType,
-//             resolve: (book) => {
-//                 return authors.find(author => author.id === book.authorId )
-//             } 
-//         }
-//     })
-// })
-
 
 const BookType = new GraphQLObjectType({
     name: 'Book',
