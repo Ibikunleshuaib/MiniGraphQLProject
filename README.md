@@ -23,7 +23,7 @@ v.  Then in your browser navigate to 'http://localhost:5000/graphql'
 
 ### Query sample that can be passed:
 
-## Query author's names and books written by each author:
+#### Query author's names and books written by each author:
 
 
 {
@@ -38,7 +38,7 @@ v.  Then in your browser navigate to 'http://localhost:5000/graphql'
 
 
 
-## Query single book and name of the author:
+#### Query single book and name of the author:
 
 {
     book(id: 1) {
@@ -51,7 +51,7 @@ v.  Then in your browser navigate to 'http://localhost:5000/graphql'
 
 
 
-## Query single author:
+#### Query single author:
 {
     author(id: 1) {
         name
@@ -62,7 +62,7 @@ v.  Then in your browser navigate to 'http://localhost:5000/graphql'
 
 
 
-## Add new book:
+#### Add new book:
 
 mutation {
   addBook(name: "A new book name", authorId: 1) {
@@ -72,7 +72,7 @@ mutation {
 }
 
 
-## Add new author:
+#### Add new author:
 
 mutation {
   addAuthor(name: "New Author") {
