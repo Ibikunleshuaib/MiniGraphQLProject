@@ -1,9 +1,9 @@
 ## MiniGraphQLProject
 
-##This is a simple graphql server using node.js and express. The application returns data on books and authors specifically based on query.
+## This is a simple graphql server using node.js and express. The application returns data on books and authors specifically based on query.
 
 
-#Installation:
+# Installation:
 
 i.  Clone this repository
 
@@ -18,12 +18,12 @@ v.  Then in your browser navigate to 'http://localhost:5000/graphql'
 
 
 
-#Usage
+# Usage
 
 
-Query sample that can be passed:
+### Query sample that can be passed:
 
-##Query author's names and books written by each author:
+## Query author's names and books written by each author:
 
 
 {
@@ -38,7 +38,7 @@ Query sample that can be passed:
 
 
 
-##Query single book and name of the author:
+## Query single book and name of the author:
 
 {
     book(id: 1) {
@@ -51,7 +51,7 @@ Query sample that can be passed:
 
 
 
-##Query single author:
+## Query single author:
 {
     author(id: 1) {
         name
@@ -62,7 +62,7 @@ Query sample that can be passed:
 
 
 
-##Add new book:
+## Add new book:
 
 mutation {
   addBook(name: "A new book name", authorId: 1) {
@@ -72,7 +72,7 @@ mutation {
 }
 
 
-##Add new author:
+## Add new author:
 
 mutation {
   addAuthor(name: "New Author") {
